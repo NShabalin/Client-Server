@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "name": "windows-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/include",
+        "${workspaceFolder}/server",
+        "${workspaceFolder}/client"
+      ],
+      "compilerPath": "gcc",
+      "cStandard": "${default}",
+      "cppStandard": "${default}",
+      "intelliSenseMode": "windows-gcc-x64",
+      "compilerArgs": [
+        ""
+      ]
+    }
+  ],
+  "version": 4
+}
