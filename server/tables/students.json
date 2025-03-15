@@ -1,0 +1,13 @@
+[
+    {"User": "S001", "Name": "Ivan Petrov", "Group": ["Chess Club", "Math Club"], "Department": "Physics"},
+    {"User": "S002", "Name": "Maria Ivanova", "Group": "Debate Club", "Department": "Literature"},
+    {"User": "S003", "Name": "Alexey Smirnov", "Group": ["Science Club"], "Department": "Biology"},
+    {"User": "S004", "Name": "Olga Fedorova", "Group": ["Music Club", "Drama Club"], "Department": "Arts"},
+    {"User": "S005", "Name": "Dmitry Sokolov", "Group": "Football Team", "Department": "Physical Education"},
+    {"User": "S006", "Name": "Elena Sidorova", "Group": ["Robotics Club"], "Department": "Engineering"},
+    {"User": "S007", "Name": "Nikolai Kuznetsov", "Group": ["Literature Club"], "Department": "History"},
+    {"User": "S008", "Name": "Anna Volkova", "Group": ["Art Club", "Science Club"], "Department": "Chemistry"},
+    {"User": "S009", "Name": "Sergey Lebedev", "Group": "Swimming Team", "Department": "Sports"},
+    {"User": "S010", "Name": "Tatiana Smirnova", "Group": ["Dance Club"], "Department": "Music"}
+  ]
+  

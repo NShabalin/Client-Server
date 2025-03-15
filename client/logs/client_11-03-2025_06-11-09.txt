@@ -1,0 +1,19 @@
+11-03-2025_06-11-09: Started client initialization
+11-03-2025_06-11-09: Initialization complete
+11-03-2025_06-11-09: Connecting to the sever
+11-03-2025_06-11-09: Connection complete
+11-03-2025_06-11-14: Sending a command get_all_tables
+11-03-2025_06-11-14: Sending message with id 1
+11-03-2025_06-11-14: Message sent successfuly
+11-03-2025_06-11-14: Receiving message
+11-03-2025_06-11-19: Message with id 21 received successfully
+11-03-2025_06-11-24: Sending a command get_all_tables
+11-03-2025_06-11-24: Sending message with id 22
+11-03-2025_06-11-24: Message sent successfuly
+11-03-2025_06-11-24: Receiving message
+11-03-2025_06-11-24: Message with id 23 received successfully
+11-03-2025_06-11-26: Sending a command get_table_data
+11-03-2025_06-11-26: Sending message with id 24
+11-03-2025_06-11-26: Message sent successfuly
+11-03-2025_06-11-26: Receiving message
+11-03-2025_06-11-26: Message with id 25 received successfully

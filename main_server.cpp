@@ -4,7 +4,6 @@
 
 int main() {
     Server server;
-    server.init();
 
     return 0;
 }
