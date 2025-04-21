@@ -1,0 +1,79 @@
+[
+    {
+        "Department": "Programmer",
+        "Group": [
+            "Admin",
+            "Worker"
+        ],
+        "Name": "Ivan Ivanovich",
+        "User": "Admin"
+    },
+    {
+        "Department": "Driver",
+        "Group": "Worker",
+        "Name": "Alexandr Alexandrovich",
+        "User": "Work"
+    },
+    {
+        "Department": "HR",
+        "Group": [
+            "Manager"
+        ],
+        "Name": "Elena Petrovna",
+        "User": "Manager"
+    },
+    {
+        "Department": "IT",
+        "Group": [
+            "Worker",
+            "Developer"
+        ],
+        "Name": "Sergey Ivanov",
+        "User": "Dev"
+    },
+    {
+        "Department": "Support",
+        "Group": "Worker",
+        "Name": "Olga Sidorova",
+        "User": "Support"
+    },
+    {
+        "Department": "Testing",
+        "Group": [
+            "Worker",
+            "QA"
+        ],
+        "Name": "Dmitry Fedorov",
+        "User": "QA"
+    },
+    {
+        "Department": "IT Department",
+        "Group": "Worker",
+        "Name": "Marina Kuznetsova",
+        "User": "Sales"
+    },
+    {
+        "Department": "Warehouse",
+        "Group": [
+            "Worker",
+            "Logistics"
+        ],
+        "Name": "Nikolay Romanov",
+        "User": "Logistics"
+    },
+    {
+        "Department": "Consulting",
+        "Group": [
+            "Worker",
+            "Consultant"
+        ],
+        "Name": "Anna Volnova",
+        "User": "Consultant"
+    },
+    {
+        "Department": "Executive",
+        "Group": "Manager",
+        "Name": "Victor Pavlov",
+        "User": "Executive"
+    }
+]

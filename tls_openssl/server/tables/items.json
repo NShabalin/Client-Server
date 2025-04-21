@@ -1,0 +1,76 @@
+[
+    {
+        "Department": "Warehouse A",
+        "Group": [
+            "Electronics",
+            "Computers"
+        ],
+        "ID": "INV001",
+        "Name": "Laptop Dell XPS"
+    },
+    {
+        "Department": "Warehouse A",
+        "Group": "Electronics",
+        "ID": "INV002",
+        "Name": "Smartphone iPhone"
+    },
+    {
+        "Department": "Warehouse B",
+        "Group": [
+            "Furniture"
+        ],
+        "ID": "INV003",
+        "Name": "Office Chair"
+    },
+    {
+        "Department": "Warehouse A",
+        "Group": [
+            "Electronics",
+            "Office"
+        ],
+        "ID": "INV004",
+        "Name": "Printer HP"
+    },
+    {
+        "Department": "Warehouse B",
+        "Group": "Furniture",
+        "ID": "INV005",
+        "Name": "Desk"
+    },
+    {
+        "Department": "Warehouse A",
+        "Group": [
+            "Electronics",
+            "Computers"
+        ],
+        "ID": "INV006",
+        "Name": "Monitor Samsung"
+    },
+    {
+        "Department": "Warehouse C",
+        "Group": "Appliances",
+        "ID": "INV007",
+        "Name": "Coffee Machine"
+    },
+    {
+        "Department": "Warehouse A",
+        "Group": [
+            "Electronics",
+            "Networking"
+        ],
+        "ID": "INV008",
+        "Name": "Router TP-Link"
+    },
+    {
+        "Department": "Warehouse C",
+        "Group": "Electronics",
+        "ID": "INV009",
+        "Name": "Projector Epson"
+    },
+    {
+        "Department": "Warehouse B",
+        "Group": "Electronics",
+        "ID": "INV010",
+        "Name": "Keyboard"
+    }
+]

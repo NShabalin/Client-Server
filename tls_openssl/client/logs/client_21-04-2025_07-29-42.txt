@@ -1,0 +1,15 @@
+21-04-2025_07-29-42: Started client initialization
+21-04-2025_07-29-42: Initializing the socket
+21-04-2025_07-29-42: Connecting to the server over TLS
+21-04-2025_07-29-42: Connection complete. Address: 127.0.0.1:7111
+21-04-2025_07-29-42: Initialization complete
+21-04-2025_07-29-44: Sending a command get_all_tables
+21-04-2025_07-29-44: Sending message with id 1
+21-04-2025_07-29-44: Message sent successfuly
+21-04-2025_07-29-44: Receiving message
+21-04-2025_07-29-44: Message with id 2 received successfully
+21-04-2025_07-29-46: Sending a command check_json_integrity
+21-04-2025_07-29-46: Sending message with id 3
+21-04-2025_07-29-46: Message sent successfuly
+21-04-2025_07-29-46: Receiving message
+21-04-2025_07-29-46: Message with id 4 received successfully

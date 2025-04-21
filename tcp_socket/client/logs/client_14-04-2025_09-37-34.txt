@@ -1,0 +1,20 @@
+14-04-2025_09-37-34: Started client initialization
+14-04-2025_09-37-34: Initialization complete
+14-04-2025_09-37-34: Connecting to the sever
+14-04-2025_09-37-34: Connection failed
+14-04-2025_09-37-34: Couldn't connect to the server. Trying to reconnect.
+14-04-2025_09-37-39: Connecting to the sever
+14-04-2025_09-37-39: Connection failed
+14-04-2025_09-37-39: Couldn't connect to the server. Trying to reconnect.
+14-04-2025_09-37-44: Connecting to the sever
+14-04-2025_09-37-44: Connection complete. Address: 127.0.0.1:7111
+14-04-2025_09-37-48: Sending a command get_all_tables
+14-04-2025_09-37-48: Sending message with id 1
+14-04-2025_09-37-48: Message sent successfuly
+14-04-2025_09-37-48: Receiving message
+14-04-2025_09-37-49: Message with id 2 received successfully
+14-04-2025_09-37-55: Sending a command check_json_integrity
+14-04-2025_09-37-55: Sending message with id 3
+14-04-2025_09-37-55: Message sent successfuly
+14-04-2025_09-37-55: Receiving message
+14-04-2025_09-37-56: Message with id 4 received successfully

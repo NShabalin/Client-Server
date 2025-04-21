@@ -1,0 +1,13 @@
+[
+    {"ID": "INV001", "Name": "Laptop Dell XPS", "Group": ["Electronics", "Computers"], "Department": "Warehouse A"},
+    {"ID": "INV002", "Name": "Smartphone iPhone", "Group": "Electronics", "Department": "Warehouse A"},
+    {"ID": "INV003", "Name": "Office Chair", "Group": ["Furniture"], "Department": "Warehouse B"},
+    {"ID": "INV004", "Name": "Printer HP", "Group": ["Electronics", "Office"], "Department": "Warehouse A"},
+    {"ID": "INV005", "Name": "Desk", "Group": "Furniture", "Department": "Warehouse B"},
+    {"ID": "INV006", "Name": "Monitor Samsung", "Group": ["Electronics", "Computers"], "Department": "Warehouse A"},
+    {"ID": "INV007", "Name": "Coffee Machine", "Group": "Appliances", "Department": "Warehouse C"},
+    {"ID": "INV008", "Name": "Router TP-Link", "Group": ["Electronics", "Networking"], "Department": "Warehouse A"},
+    {"ID": "INV009", "Name": "Projector Epson", "Group": "Electronics", "Department": "Warehouse C"},
+    {"ID": "INV010", "Name": "Whiteboard", "Group": "Office Supplies", "Department": "Warehouse B"}
+  ]
+  

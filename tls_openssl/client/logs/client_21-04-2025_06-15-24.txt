@@ -1,0 +1,9 @@
+21-04-2025_06-15-24: Started client initialization
+21-04-2025_06-15-24: Initialization complete
+21-04-2025_06-15-24: Connecting to the server over TLS
+21-04-2025_06-15-24: Connection complete. Address: 127.0.0.1:7111
+21-04-2025_06-15-25: Sending a command get_all_tables
+21-04-2025_06-15-25: Sending message with id 1
+21-04-2025_06-15-25: Message sent successfuly
+21-04-2025_06-15-25: Receiving message
+21-04-2025_06-15-25: Message with id 2 received successfully

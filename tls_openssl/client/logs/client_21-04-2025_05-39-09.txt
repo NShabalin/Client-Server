@@ -1,0 +1,22 @@
+21-04-2025_05-39-09: Started client initialization
+21-04-2025_05-39-09: Connecting to the server over TLS
+21-04-2025_05-39-09: Connection complete. Address: 127.0.0.1:7111
+21-04-2025_05-39-09: Initialization complete
+21-04-2025_05-39-09: Connecting to the server over TLS
+21-04-2025_05-39-09: Connection to the server over TCP socket failed
+21-04-2025_05-39-09: Couldn't connect to the server. Trying to reconnect.
+21-04-2025_05-39-14: Connecting to the server over TLS
+21-04-2025_05-39-14: Connection to the server over TCP socket failed
+21-04-2025_05-39-14: Couldn't connect to the server. Trying to reconnect.
+21-04-2025_05-39-19: Connecting to the server over TLS
+21-04-2025_05-39-19: Connection to the server over TCP socket failed
+21-04-2025_05-39-19: Couldn't connect to the server. Trying to reconnect.
+21-04-2025_05-39-24: Connecting to the server over TLS
+21-04-2025_05-39-24: Connection to the server over TCP socket failed
+21-04-2025_05-39-24: Couldn't connect to the server. Trying to reconnect.
+21-04-2025_05-39-29: Connecting to the server over TLS
+21-04-2025_05-39-29: Connection to the server over TCP socket failed
+21-04-2025_05-39-29: Couldn't connect to the server. Trying to reconnect.
+21-04-2025_05-39-34: Connecting to the server over TLS
+21-04-2025_05-39-34: Connection to the server over TCP socket failed
+21-04-2025_05-39-34: Couldn't connect to the server. Trying to reconnect.

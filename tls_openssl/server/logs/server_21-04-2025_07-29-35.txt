@@ -1,0 +1,27 @@
+21-04-2025_07-29-35: Initializing server
+21-04-2025_07-29-35: Server initialization successful
+21-04-2025_07-29-35: Waiting for client connection
+21-04-2025_07-29-42: Connection to a client successful
+21-04-2025_07-29-42: Waiting for client connection
+21-04-2025_07-29-42: Waiting for a command. (Client address: 127.0.0.1:33710)
+21-04-2025_07-29-42: Receiving message. (Client address: 127.0.0.1:33710)
+21-04-2025_07-29-44: Message with id 1 received successfully (Client address: 127.0.0.1:33710)
+21-04-2025_07-29-44: Executing the command: {"command":"get_all_tables"}. (Client address: 127.0.0.1:33710)
+21-04-2025_07-29-44: Command executed. (Client address: 127.0.0.1:33710)
+21-04-2025_07-29-44: Sending message with id 2. (Client address: 127.0.0.1:33710)
+21-04-2025_07-29-44: Message sent successfuly (Client address: 127.0.0.1:33710)
+21-04-2025_07-29-44: Waiting for a command. (Client address: 127.0.0.1:33710)
+21-04-2025_07-29-44: Receiving message. (Client address: 127.0.0.1:33710)
+21-04-2025_07-29-46: Message with id 3 received successfully (Client address: 127.0.0.1:33710)
+21-04-2025_07-29-46: Executing the command: {"command":"check_json_integrity"}. (Client address: 127.0.0.1:33710)
+21-04-2025_07-29-46: JSON parsing failed for file: server/tables/students.json. Error: [json.exception.parse_error.101] parse error at line 11, column 3: syntax error while parsing object key - unexpected end of input; expected string literal (Client address: 127.0.0.1:33710)
+21-04-2025_07-29-46: Integrity check passed for the file: server/tables/employees.json. (Client address: 127.0.0.1:33710)
+21-04-2025_07-29-46: Integrity check passed for the file: server/tables/items.json. (Client address: 127.0.0.1:33710)
+21-04-2025_07-29-46: Command executed. (Client address: 127.0.0.1:33710)
+21-04-2025_07-29-46: Sending message with id 4. (Client address: 127.0.0.1:33710)
+21-04-2025_07-29-46: Message sent successfuly (Client address: 127.0.0.1:33710)
+21-04-2025_07-29-46: Waiting for a command. (Client address: 127.0.0.1:33710)
+21-04-2025_07-29-46: Receiving message. (Client address: 127.0.0.1:33710)
+21-04-2025_07-29-50: Error while getting the message: error:0A000126:SSL routines::unexpected eof while reading (Client address: 127.0.0.1:33710)
+21-04-2025_07-29-50: Error occured while getting the message from the client. Closing the connection with the client. (Client address: 127.0.0.1:33710)
+21-04-2025_07-30-20: Closing the server.

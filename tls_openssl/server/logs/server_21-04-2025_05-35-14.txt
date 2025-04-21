@@ -1,0 +1,7 @@
+21-04-2025_05-35-14: Initializing server
+21-04-2025_05-35-14: Server initialization successful
+21-04-2025_05-35-14: Waiting for client connection
+21-04-2025_05-36-19: Connection to client successful
+21-04-2025_05-36-19: Waiting for client connection
+21-04-2025_05-36-19: Waiting for a command. (Client address: 127.0.0.1:44536)
+21-04-2025_05-36-19: Receiving message. (Client address: 127.0.0.1:44536)

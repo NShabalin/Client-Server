@@ -1,0 +1,30 @@
+21-04-2025_06-14-51: Initializing server
+21-04-2025_06-14-51: Server initialization successful
+21-04-2025_06-14-51: Waiting for client connection
+21-04-2025_06-15-11: Connection to a client successful
+21-04-2025_06-15-11: Waiting for client connection
+21-04-2025_06-15-11: Waiting for a command. (Client address: 127.0.0.1:57078)
+21-04-2025_06-15-11: Receiving message. (Client address: 127.0.0.1:57078)
+21-04-2025_06-15-24: Connection to a client successful
+21-04-2025_06-15-24: Waiting for client connection
+21-04-2025_06-15-24: Waiting for a command. (Client address: 127.0.0.1:39542)
+21-04-2025_06-15-24: Receiving message. (Client address: 127.0.0.1:39542)
+21-04-2025_06-15-25: Message with id 1 received successfully (Client address: 127.0.0.1:39542)
+21-04-2025_06-15-25: Executing the command: {"command":"get_all_tables"}. (Client address: 127.0.0.1:39542)
+21-04-2025_06-15-25: Command executed. (Client address: 127.0.0.1:39542)
+21-04-2025_06-15-25: Sending message with id 2. (Client address: 127.0.0.1:39542)
+21-04-2025_06-15-25: Message sent successfuly (Client address: 127.0.0.1:39542)
+21-04-2025_06-15-25: Waiting for a command. (Client address: 127.0.0.1:39542)
+21-04-2025_06-15-25: Receiving message. (Client address: 127.0.0.1:39542)
+21-04-2025_06-15-27: Message with id 1 received successfully (Client address: 127.0.0.1:57078)
+21-04-2025_06-15-27: Executing the command: {"command":"get_all_tables"}. (Client address: 127.0.0.1:57078)
+21-04-2025_06-15-27: Command executed. (Client address: 127.0.0.1:57078)
+21-04-2025_06-15-27: Sending message with id 3. (Client address: 127.0.0.1:57078)
+21-04-2025_06-15-27: Message sent successfuly (Client address: 127.0.0.1:57078)
+21-04-2025_06-15-27: Waiting for a command. (Client address: 127.0.0.1:57078)
+21-04-2025_06-15-27: Receiving message. (Client address: 127.0.0.1:57078)
+21-04-2025_06-15-31: Error while getting the message: error:0A000126:SSL routines::unexpected eof while reading (Client address: 127.0.0.1:57078)
+21-04-2025_06-15-31: Error occured while getting the message from the client. Closing the connection with the client. (Client address: 127.0.0.1:57078)
+21-04-2025_06-15-34: Error while getting the message: error:0A000126:SSL routines::unexpected eof while reading (Client address: 127.0.0.1:39542)
+21-04-2025_06-15-34: Error occured while getting the message from the client. Closing the connection with the client. (Client address: 127.0.0.1:39542)
+21-04-2025_06-16-08: Closing the server.

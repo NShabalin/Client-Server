@@ -1,0 +1,9 @@
+21-04-2025_05-38-58: Initializing server
+21-04-2025_05-38-58: Server initialization successful
+21-04-2025_05-38-58: Waiting for client connection
+21-04-2025_05-39-09: Connection to a client successful
+21-04-2025_05-39-09: Waiting for client connection
+21-04-2025_05-39-09: Waiting for a command. (Client address: 127.0.0.1:58844)
+21-04-2025_05-39-09: Receiving message. (Client address: 127.0.0.1:58844)
+21-04-2025_05-39-38: Error while getting the message: No OpenSSL error (Client address: 127.0.0.1:58844)
+21-04-2025_05-39-38: Error occured while getting the message from the client. Closing the connection with the client. (Client address: 127.0.0.1:58844)
