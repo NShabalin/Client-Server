@@ -1,0 +1,42 @@
+02-05-2025_08-16-27: Initializing server
+02-05-2025_08-16-27: Server initialization successful
+02-05-2025_08-16-27: Waiting for client connection
+02-05-2025_08-18-41: Connection to a client successful
+02-05-2025_08-18-41: Waiting for client connection
+02-05-2025_08-18-41: Waiting for a command. (Client address: 127.0.0.1:55208)
+02-05-2025_08-18-41: Receiving message. (Client address: 127.0.0.1:55208)
+02-05-2025_08-19-21: Connection to a client successful
+02-05-2025_08-19-21: Waiting for client connection
+02-05-2025_08-19-21: Waiting for a command. (Client address: 127.0.0.1:51720)
+02-05-2025_08-19-21: Receiving message. (Client address: 127.0.0.1:51720)
+02-05-2025_08-19-36: Connection to a client successful
+02-05-2025_08-19-36: Waiting for client connection
+02-05-2025_08-19-36: Waiting for a command. (Client address: 127.0.0.1:41402)
+02-05-2025_08-19-36: Receiving message. (Client address: 127.0.0.1:41402)
+02-05-2025_08-19-39: Message with id 1 received successfully. (Client address: 127.0.0.1:55208)
+02-05-2025_08-19-39: Executing the command: {"command":"get_all_tables"}. (Client address: 127.0.0.1:55208)
+02-05-2025_08-19-39: Command executed. (Client address: 127.0.0.1:55208)
+02-05-2025_08-19-39: Sending message with id 2. (Client address: 127.0.0.1:55208)
+02-05-2025_08-19-39: Message sent successfully. (Client address: 127.0.0.1:55208)
+02-05-2025_08-19-39: Waiting for a command. (Client address: 127.0.0.1:55208)
+02-05-2025_08-19-39: Receiving message. (Client address: 127.0.0.1:55208)
+02-05-2025_08-19-42: Message with id 1 received successfully. (Client address: 127.0.0.1:51720)
+02-05-2025_08-19-42: Executing the command: {"command":"get_all_tables"}. (Client address: 127.0.0.1:51720)
+02-05-2025_08-19-42: Command executed. (Client address: 127.0.0.1:51720)
+02-05-2025_08-19-42: Sending message with id 3. (Client address: 127.0.0.1:51720)
+02-05-2025_08-19-42: Message sent successfully. (Client address: 127.0.0.1:51720)
+02-05-2025_08-19-42: Waiting for a command. (Client address: 127.0.0.1:51720)
+02-05-2025_08-19-42: Receiving message. (Client address: 127.0.0.1:51720)
+02-05-2025_08-19-45: Message with id 1 received successfully. (Client address: 127.0.0.1:41402)
+02-05-2025_08-19-45: Executing the command: {"command":"get_all_tables"}. (Client address: 127.0.0.1:41402)
+02-05-2025_08-19-45: Command executed. (Client address: 127.0.0.1:41402)
+02-05-2025_08-19-45: Sending message with id 4. (Client address: 127.0.0.1:41402)
+02-05-2025_08-19-45: Message sent successfully. (Client address: 127.0.0.1:41402)
+02-05-2025_08-19-45: Waiting for a command. (Client address: 127.0.0.1:41402)
+02-05-2025_08-19-45: Receiving message. (Client address: 127.0.0.1:41402)
+02-05-2025_08-31-32: Error while getting the message. (Client address: 127.0.0.1:51720)
+02-05-2025_08-31-32: Error occured while getting the message from the client. Closing the connection with the client. (Client address: 127.0.0.1:51720)
+02-05-2025_08-31-34: Error while getting the message. (Client address: 127.0.0.1:41402)
+02-05-2025_08-31-34: Error occured while getting the message from the client. Closing the connection with the client. (Client address: 127.0.0.1:41402)
+02-05-2025_10-44-57: Error while getting the message. (Client address: 127.0.0.1:55208)
+02-05-2025_10-44-57: Error occured while getting the message from the client. Closing the connection with the client. (Client address: 127.0.0.1:55208)

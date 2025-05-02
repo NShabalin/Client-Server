@@ -1,9 +1,0 @@
-02-05-2025_06-25-38: Started client initialization
-02-05-2025_06-25-38: Initialization complete
-02-05-2025_06-25-38: Connecting to the sever
-02-05-2025_06-25-38: Connection complete. Address: 192.168.56.101:7111
-02-05-2025_06-25-39: Sending a command get_all_tables
-02-05-2025_06-25-39: Sending message with id 1
-02-05-2025_06-25-39: Message sent successfully
-02-05-2025_06-25-39: Receiving message
-02-05-2025_06-25-40: Message with id 2 received successfully

@@ -5,7 +5,6 @@
 #include <ws2tcpip.h>
 #pragma comment(lib, "ws2_32.lib")
 #else
-// includes for linux
 #include <netinet/in.h>
 #include <unistd.h>
 #include <arpa/inet.h>
@@ -47,6 +46,7 @@ public:
                 if (!check_server_socket()) {
                     if (!socket_init()) {
                         log("Couldn't reinitialize the server socket. Exiting the program.");
+                        std::cout << "Ошибка инициализации сокета. Завершение работы.\n";
                         exit(0);
                     }
                 }
@@ -113,6 +113,7 @@ public:
 
         // запуск сокета
         if (!socket_init()) {
+            log("Error while initializing the socket. Exiting the program.");
             server_close();
         }
 
@@ -124,6 +125,7 @@ public:
         serverSocket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
         if (serverSocket < 0) {
             log("Socket initialization failed");
+            close_socket(serverSocket);
             return false;
         }
         // структура сервера
@@ -174,7 +176,7 @@ public:
         messageJson["size"] = message.getSize();
         messageJson["data"] = message.getData();
         
-        // шифровка сообщения
+        // шифрование сообщения
         std::string text = messageJson.dump();
         std::vector<char> textEncrypted;
         encryptorOpenSSL enc(logsPath, logsEndline);

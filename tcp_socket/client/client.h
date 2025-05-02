@@ -24,6 +24,7 @@ class Client {
 private:
     int clientSocket;
     sockaddr_in serverAddress;
+
     std::string logsPath;
     uint64_t messageId;
 public:
@@ -53,6 +54,7 @@ public:
         }
     
         log("Initialization complete");
+        std::cout << "Клиент успешно запущен.\n";
         // подключение к серверу
         while (!connect_to_sever()) {
             log("Couldn't connect to the server. Trying to reconnect.");
@@ -76,7 +78,7 @@ public:
         memset(&serverAddress, 0, sizeof(serverAddress));
         serverAddress.sin_family = AF_INET; // ipv4
         serverAddress.sin_port = htons(7111);
-        int result = inet_pton(AF_INET, "192.168.56.101", &serverAddress.sin_addr);
+        int result = inet_pton(AF_INET, "127.0.0.1", &serverAddress.sin_addr);
         if (result <= 0) {
             log("ip address not valid");
             return false;
@@ -113,7 +115,7 @@ public:
         messageJson["size"] = message.getSize();
         messageJson["data"] = message.getData();
 
-        // шифровка сообщения
+        // шифрование сообщения
         std::string text = messageJson.dump();
         std::vector<char> textEncrypted;
         encryptorOpenSSL enc(logsPath, "\n");
@@ -320,6 +322,12 @@ public:
         WSACleanup();
         #else
         close(clientSocket);
+        #endif
+    }
+
+    void WSA_cleanup() {
+        #ifdef _WIN32
+        WSACleanup();
         #endif
     }
 };
