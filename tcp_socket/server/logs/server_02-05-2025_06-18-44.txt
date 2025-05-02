@@ -1,0 +1,25 @@
+02-05-2025_06-18-44: Initializing server
+02-05-2025_06-18-44: Server initialization successful
+02-05-2025_06-18-44: Waiting for client connection
+02-05-2025_06-18-52: Connection to a client successful
+02-05-2025_06-18-52: Waiting for client connection
+02-05-2025_06-18-52: Waiting for a command. (Client address: 192.168.56.1:52294)
+02-05-2025_06-18-52: Receiving message. (Client address: 192.168.56.1:52294)
+02-05-2025_06-19-29: Error while getting the message. (Client address: 192.168.56.1:52294)
+02-05-2025_06-19-29: Error occured while getting the message from the client. Closing the connection with the client. (Client address: 192.168.56.1:52294)
+02-05-2025_06-20-33: Connection to a client successful
+02-05-2025_06-20-33: Waiting for client connection
+02-05-2025_06-20-33: Waiting for a command. (Client address: 192.168.56.1:49836)
+02-05-2025_06-20-33: Receiving message. (Client address: 192.168.56.1:49836)
+02-05-2025_06-23-01: Connection to a client successful
+02-05-2025_06-23-01: Waiting for client connection
+02-05-2025_06-23-01: Waiting for a command. (Client address: 192.168.56.1:42136)
+02-05-2025_06-23-01: Receiving message. (Client address: 192.168.56.1:42136)
+02-05-2025_06-23-05: Message with id 1 received successfully. (Client address: 192.168.56.1:42136)
+02-05-2025_06-23-05: Executing the command: {"command":"get_all_tables"}. (Client address: 192.168.56.1:42136)
+02-05-2025_06-23-05: Command executed. (Client address: 192.168.56.1:42136)
+02-05-2025_06-23-05: Sending message with id 2. (Client address: 192.168.56.1:42136)
+02-05-2025_06-23-05: Message sent successfuly. (Client address: 192.168.56.1:42136)
+02-05-2025_06-23-05: Waiting for a command. (Client address: 192.168.56.1:42136)
+02-05-2025_06-23-05: Receiving message. (Client address: 192.168.56.1:42136)
+02-05-2025_06-23-12: Closing the server.
