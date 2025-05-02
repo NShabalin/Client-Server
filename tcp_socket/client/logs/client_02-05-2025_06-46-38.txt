@@ -1,0 +1,7 @@
+02-05-2025_06-46-38: Started client initialization
+02-05-2025_06-46-38: Initialization complete
+02-05-2025_06-46-38: Connecting to the sever
+02-05-2025_06-46-41: Connection failed
+02-05-2025_06-46-41: Couldn't connect to the server. Trying to reconnect.
+02-05-2025_06-46-46: Connecting to the sever
+02-05-2025_06-46-46: Connection complete. Address: 192.168.56.101:7111

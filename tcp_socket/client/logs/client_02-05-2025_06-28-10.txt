@@ -1,0 +1,20 @@
+02-05-2025_06-28-10: Started client initialization
+02-05-2025_06-28-10: Initialization complete
+02-05-2025_06-28-10: Connecting to the sever
+02-05-2025_06-28-10: Connection complete. Address: 192.168.56.101:7111
+02-05-2025_06-28-14: Sending a command get_all_tables
+02-05-2025_06-28-14: Sending message with id 1
+02-05-2025_06-28-14: Message sent successfully
+02-05-2025_06-28-14: Receiving message
+02-05-2025_06-28-15: Message with id 3 received successfully
+02-05-2025_06-28-21: Sending a command get_all_tables
+02-05-2025_06-28-21: Error discovered while checking the socket:Connection reset by peer
+02-05-2025_06-28-21: Connecting to the sever
+02-05-2025_06-28-21: Connection failed
+02-05-2025_06-28-21: Couldn't connect to the server. Trying to reconnect.
+02-05-2025_06-28-26: Connecting to the sever
+02-05-2025_06-29-03: Connection complete. Address: 192.168.56.101:7111
+02-05-2025_06-29-03: Sending message with id 4
+02-05-2025_06-29-03: Message sent successfully
+02-05-2025_06-29-03: Receiving message
+02-05-2025_06-29-04: Message with id 5 received successfully

@@ -1,0 +1,83 @@
+02-05-2025_07-42-10: Started client initialization
+02-05-2025_07-42-10: Initialization complete
+02-05-2025_07-42-10: Connecting to the sever
+02-05-2025_07-42-10: Connection complete. Address: 192.168.56.101:7111
+02-05-2025_07-42-11: Sending a command get_all_tables
+02-05-2025_07-42-11: Sending message with id 1
+02-05-2025_07-42-11: Message sent successfully
+02-05-2025_07-42-11: Receiving message
+02-05-2025_07-42-12: Message with id 35 received successfully
+02-05-2025_07-42-13: Sending a command get_all_tables
+02-05-2025_07-42-13: Sending message with id 36
+02-05-2025_07-42-13: Message sent successfully
+02-05-2025_07-42-13: Receiving message
+02-05-2025_07-42-14: Message with id 37 received successfully
+02-05-2025_07-42-23: Sending a command get_all_tables
+02-05-2025_07-42-23: Sending message with id 38
+02-05-2025_07-42-23: Message sent successfully
+02-05-2025_07-42-23: Receiving message
+02-05-2025_07-42-24: Error while getting the message
+02-05-2025_07-42-24: Error while getting the message. Checking the socket and trying to reconnect to the server.
+02-05-2025_07-42-24: Connecting to the sever
+02-05-2025_07-42-24: Connection failed
+02-05-2025_07-42-24: Couldn't connect to the server.
+02-05-2025_07-42-26: Sending a command get_all_tables
+02-05-2025_07-42-26: Connecting to the sever
+02-05-2025_07-42-46: Connection complete. Address: 192.168.56.101:7111
+02-05-2025_07-42-46: Sending message with id 39
+02-05-2025_07-42-46: Message sent successfully
+02-05-2025_07-42-46: Receiving message
+02-05-2025_07-42-46: Error while getting the message
+02-05-2025_07-42-46: Error while getting the message. Checking the socket and trying to reconnect to the server.
+02-05-2025_07-42-46: Connecting to the sever
+02-05-2025_07-42-46: Connection failed
+02-05-2025_07-42-46: Couldn't connect to the server.
+02-05-2025_07-42-51: Sending a command get_all_tables
+02-05-2025_07-42-51: Connecting to the sever
+02-05-2025_07-42-51: Connection complete. Address: 192.168.56.101:7111
+02-05-2025_07-42-51: Sending message with id 40
+02-05-2025_07-42-51: Message sent successfully
+02-05-2025_07-42-51: Receiving message
+02-05-2025_07-42-52: Message with id 41 received successfully
+02-05-2025_07-49-27: Sending a command get_all_tables
+02-05-2025_07-49-27: Sending message with id 42
+02-05-2025_07-49-27: Message sent successfully
+02-05-2025_07-49-27: Receiving message
+02-05-2025_07-49-27: Error while getting the message
+02-05-2025_07-49-27: Error while getting the message. Checking the socket and trying to reconnect to the server.
+02-05-2025_07-49-27: Connecting to the sever
+02-05-2025_07-49-27: Connection failed
+02-05-2025_07-49-27: Couldn't connect to the server.
+02-05-2025_07-49-44: Sending a command get_all_tables
+02-05-2025_07-49-44: Connecting to the sever
+02-05-2025_07-49-44: Connection complete. Address: 192.168.56.101:7111
+02-05-2025_07-49-44: Sending message with id 42
+02-05-2025_07-49-44: Message sent successfully
+02-05-2025_07-49-44: Receiving message
+02-05-2025_07-49-44: Error while getting the message
+02-05-2025_07-49-44: Error while getting the message. Checking the socket and trying to reconnect to the server.
+02-05-2025_07-49-44: Connecting to the sever
+02-05-2025_07-49-44: Connection failed
+02-05-2025_07-49-44: Couldn't connect to the server.
+02-05-2025_07-50-02: Sending a command get_all_tables
+02-05-2025_07-50-02: Connecting to the sever
+02-05-2025_07-50-02: Connection complete. Address: 192.168.56.101:7111
+02-05-2025_07-50-02: Sending message with id 42
+02-05-2025_07-50-02: Message sent successfully
+02-05-2025_07-50-02: Receiving message
+02-05-2025_07-50-03: Message with id 44 received successfully
+02-05-2025_07-50-08: Sending a command get_table_data
+02-05-2025_07-50-08: Sending message with id 45
+02-05-2025_07-50-08: Message sent successfully
+02-05-2025_07-50-08: Receiving message
+02-05-2025_07-50-09: Message with id 46 received successfully
+02-05-2025_07-50-12: Sending a command get_all_tables
+02-05-2025_07-50-12: Sending message with id 42
+02-05-2025_07-50-12: Message sent successfully
+02-05-2025_07-50-12: Receiving message
+02-05-2025_07-50-13: Message with id 47 received successfully
+02-05-2025_07-50-14: Sending a command get_table_data
+02-05-2025_07-50-14: Sending message with id 48
+02-05-2025_07-50-14: Message sent successfully
+02-05-2025_07-50-14: Receiving message
+02-05-2025_07-50-15: Message with id 49 received successfully

@@ -1,0 +1,28 @@
+02-05-2025_06-33-28: Started client initialization
+02-05-2025_06-33-28: Initialization complete
+02-05-2025_06-33-28: Connecting to the sever
+02-05-2025_06-33-28: Connection complete. Address: 192.168.56.101:7111
+02-05-2025_06-33-30: Sending a command check_json_integrity
+02-05-2025_06-33-30: Sending message with id 1
+02-05-2025_06-33-30: Message sent successfully
+02-05-2025_06-33-30: Receiving message
+02-05-2025_06-33-31: Message with id 2 received successfully
+02-05-2025_06-33-41: Sending a command get_all_tables
+02-05-2025_06-33-41: Sending message with id 3
+02-05-2025_06-33-41: Message sent successfully
+02-05-2025_06-33-41: Receiving message
+02-05-2025_06-33-42: Message with id 4 received successfully
+02-05-2025_06-33-44: Sending a command get_table_data
+02-05-2025_06-33-44: Sending message with id 5
+02-05-2025_06-33-44: Message sent successfully
+02-05-2025_06-33-44: Receiving message
+02-05-2025_06-33-45: Message with id 6 received successfully
+02-05-2025_06-34-12: Sending a command change_table_entry
+02-05-2025_06-34-12: Sending message with id 7
+02-05-2025_06-34-12: Message sent successfully
+02-05-2025_06-34-12: Receiving message
+02-05-2025_06-34-13: Message with id 8 received successfully
+02-05-2025_06-36-26: Sending a command get_all_tables
+02-05-2025_06-36-26: Sending message with id 3
+02-05-2025_06-36-26: Message sent successfully
+02-05-2025_06-36-26: Receiving message

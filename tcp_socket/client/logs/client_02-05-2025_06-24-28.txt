@@ -1,0 +1,43 @@
+02-05-2025_06-24-28: Started client initialization
+02-05-2025_06-24-28: Initialization complete
+02-05-2025_06-24-28: Connecting to the sever
+02-05-2025_06-24-35: Connection complete. Address: 192.168.56.101:7111
+02-05-2025_06-24-40: Sending a command get_all_tables
+02-05-2025_06-24-40: Sending message with id 1
+02-05-2025_06-24-40: Message sent successfully
+02-05-2025_06-24-40: Receiving message
+02-05-2025_06-24-41: Message with id 2 received successfully
+02-05-2025_06-24-44: Sending a command get_all_tables
+02-05-2025_06-24-44: Sending message with id 3
+02-05-2025_06-24-44: Message sent successfully
+02-05-2025_06-24-44: Receiving message
+02-05-2025_06-24-45: Message with id 4 received successfully
+02-05-2025_06-24-51: Sending a command get_all_tables
+02-05-2025_06-24-51: Error discovered while checking the socket:Connection reset by peer
+02-05-2025_06-24-51: Connecting to the sever
+02-05-2025_06-24-51: Connection failed
+02-05-2025_06-24-51: Couldn't connect to the server. Trying to reconnect.
+02-05-2025_06-24-56: Connecting to the sever
+02-05-2025_06-24-56: Connection failed
+02-05-2025_06-24-56: Couldn't connect to the server. Trying to reconnect.
+02-05-2025_06-25-01: Connecting to the sever
+02-05-2025_06-25-01: Connection failed
+02-05-2025_06-25-01: Couldn't connect to the server. Trying to reconnect.
+02-05-2025_06-25-06: Connecting to the sever
+02-05-2025_06-25-06: Connection failed
+02-05-2025_06-25-06: Couldn't connect to the server. Trying to reconnect.
+02-05-2025_06-25-11: Connecting to the sever
+02-05-2025_06-25-11: Connection failed
+02-05-2025_06-25-11: Couldn't connect to the server. Trying to reconnect.
+02-05-2025_06-25-16: Connecting to the sever
+02-05-2025_06-25-16: Connection failed
+02-05-2025_06-25-16: Couldn't connect to the server. Trying to reconnect.
+02-05-2025_06-25-21: Connecting to the sever
+02-05-2025_06-25-21: Connection failed
+02-05-2025_06-25-22: Couldn't connect to the server. Trying to reconnect.
+02-05-2025_06-25-27: Connecting to the sever
+02-05-2025_06-25-27: Connection failed
+02-05-2025_06-25-27: Couldn't connect to the server. Trying to reconnect.
+02-05-2025_06-25-32: Connecting to the sever
+02-05-2025_06-25-32: Connection failed
+02-05-2025_06-25-32: Couldn't connect to the server. Trying to reconnect.

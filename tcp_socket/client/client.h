@@ -47,12 +47,8 @@ public:
         #endif
         // запуск сокета
         if (!socket_init()) {
-            #ifdef _WIN32
-            closesocket(clientSocket);
-            WSACleanup();
-            #else
-            close(clientSocket);
-            #endif
+            close_socket();
+            log("Error while initializing the socket. Exiting the program.");
             exit(0);
         }
     
@@ -60,29 +56,27 @@ public:
         // подключение к серверу
         while (!connect_to_sever()) {
             log("Couldn't connect to the server. Trying to reconnect.");
+            std::cout << "Ошибка соединения с сервером. Попытка переподключения.\n";
             std::this_thread::sleep_for(std::chrono::seconds(5));
         }
     }
 
     bool socket_init() {
         if (clientSocket != -1) {
-            #ifdef _WIN32
-            closesocket(clientSocket);
-            #else
-            close(clientSocket);
-            #endif
+            close_socket();
         }
 
         clientSocket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
         if (clientSocket < 0) {
             log("Socket initialization failed");
+            close_socket();
             return false;
         }
         // структура сервера
         memset(&serverAddress, 0, sizeof(serverAddress));
         serverAddress.sin_family = AF_INET; // ipv4
         serverAddress.sin_port = htons(7111);
-        int result = inet_pton(AF_INET, "127.0.0.1", &serverAddress.sin_addr);
+        int result = inet_pton(AF_INET, "192.168.56.101", &serverAddress.sin_addr);
         if (result <= 0) {
             log("ip address not valid");
             return false;
@@ -95,6 +89,7 @@ public:
         // попытка подключения к серверу
         if (connect(clientSocket, (sockaddr*)&serverAddress, sizeof(serverAddress)) < 0) {
             log("Connection failed");
+            socket_init();
             return false;
         }
 
@@ -109,6 +104,8 @@ public:
     }
     
     bool send_message(Message message) {
+        reconnecting();
+
         log("Sending message with id " + std::to_string(message.getId()));
 
         nlohmann::json messageJson;
@@ -129,12 +126,12 @@ public:
         int sendResult = send(clientSocket, textEncrypted.data(), textEncrypted.size(), 0);
         // если произошла обшибка
         if (sendResult < 0) {
-            std::cout << "Sending message failed\n";
+            std::cout << "Ошибка отправки сообщения\n";
             log("Sending message failed");
             return false;
         }
         else {
-            log("Message sent successfuly");
+            log("Message sent successfully");
             return true;
         }
     }
@@ -146,7 +143,7 @@ public:
         memset(textEncrypted.data(), 0, textEncrypted.size());
 
         // получение сообщения через сокет
-        int bytesReceived = recv(clientSocket, textEncrypted.data(), textEncrypted.size(), 0);
+        int bytesReceived = 0;
         bool error = false;
         // используется select для случев, когда сообщение передается несколькими пакетами
         while (true) {
@@ -221,7 +218,11 @@ public:
         // отправка сообщения серверу
         log("Sending a command " + command);
         Message message(messageId, size, commandJson);
-        send_message(message);
+        
+        if (!send_message(message)) {
+            return Message(0, 0, nlohmann::json::object());
+        }
+
         // получение ответа от сервера
         Message receivedMessage = receive_message();
         // если произошла ошибка
@@ -229,11 +230,7 @@ public:
             log("Error while getting the message. Checking the socket and trying to reconnect to the server.");
 
             // проверка сокета
-            if (!check_client_socket()) {
-                if (!socket_init()) {
-                    exit(0);
-                }
-            }
+            reconnecting();
 
             if (connect_to_sever()) {
                 receivedMessage = receive_message();
@@ -248,16 +245,42 @@ public:
     }
 
     bool check_client_socket() {
-        int error = 0;
-        socklen_t length = sizeof(error);
-        if (getsockopt(clientSocket, SOL_SOCKET, SO_ERROR, &error, &length) < 0) {
-            log("Error discovered while getting the socket options: " + std::string(strerror(error)));
+        #ifdef _WIN32
+        // в WinSock нет MSG_DONTWAIT, делаем временно неблокирующим сокет
+        u_long nonblock = 1;
+        ioctlsocket(clientSocket, FIONBIO, &nonblock);
+
+        char tmp;
+        // просматриваем один байт
+        int n = recv(clientSocket, &tmp, 1, MSG_PEEK);
+
+        // возвращаем блокирующий режим
+        nonblock = 0;
+        ioctlsocket(clientSocket, FIONBIO, &nonblock);
+
+        if (n > 0) 
+            return true;
+        if (n == 0) 
             return false;
-        }
-        if (error != 0) {
-            log("Error discovered while checking the socket:" + std::string(strerror(error)));
-        }
-        return true;
+
+        int err = WSAGetLastError();
+        // нет данных, но сокет впорядке
+        if (err == WSAEWOULDBLOCK) 
+            return true;
+        return false;
+
+        #else 
+        
+        char tmp;
+        int n = recv(clientSocket, &tmp, 1, MSG_DONTWAIT | MSG_PEEK);
+        if (n > 0) 
+            return true;
+        if (n == 0) 
+            return false;
+        if (errno == EAGAIN || errno == EWOULDBLOCK)
+            return true;
+        return false;  
+        #endif
     }
 
     std::string get_current_time() {
@@ -278,6 +301,26 @@ public:
         if (logFile.is_open()) {
             logFile << get_current_time() << ": " << message << "\n";
         }
+    }
+
+    void reconnecting() {
+        if (!check_client_socket()) {
+            std::cout << "Ошибка соединения с сервером. Попытка переподключения.\n";
+            while (!connect_to_sever()) {
+                log("Couldn't connect to the server. Trying to reconnect.");
+                std::cout << "Ошибка соединения с сервером. Попытка переподключения.\n";
+                std::this_thread::sleep_for(std::chrono::seconds(5));
+            }
+        }
+    }
+
+    void close_socket() {
+        #ifdef _WIN32
+        closesocket(clientSocket);
+        WSACleanup();
+        #else
+        close(clientSocket);
+        #endif
     }
 };
 

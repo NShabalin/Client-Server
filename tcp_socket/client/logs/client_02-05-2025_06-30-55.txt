@@ -1,0 +1,51 @@
+02-05-2025_06-30-55: Started client initialization
+02-05-2025_06-30-55: Initialization complete
+02-05-2025_06-30-55: Connecting to the sever
+02-05-2025_06-30-55: Connection complete. Address: 192.168.56.101:7111
+02-05-2025_06-31-00: Sending a command get_all_tables
+02-05-2025_06-31-00: Sending message with id 1
+02-05-2025_06-31-00: Message sent successfully
+02-05-2025_06-31-00: Receiving message
+02-05-2025_06-31-01: Message with id 6 received successfully
+02-05-2025_06-31-10: Sending a command get_all_tables
+02-05-2025_06-31-10: Error discovered while checking the socket:Connection reset by peer
+02-05-2025_06-31-10: Connecting to the sever
+02-05-2025_06-31-10: Connection failed
+02-05-2025_06-31-10: Couldn't connect to the server. Trying to reconnect.
+02-05-2025_06-31-15: Connecting to the sever
+02-05-2025_06-31-22: Connection complete. Address: 192.168.56.101:7111
+02-05-2025_06-31-22: Sending message with id 7
+02-05-2025_06-31-22: Message sent successfully
+02-05-2025_06-31-22: Receiving message
+02-05-2025_06-31-24: Message with id 8 received successfully
+02-05-2025_06-32-30: Sending a command get_all_tables
+02-05-2025_06-32-30: Sending message with id 9
+02-05-2025_06-32-30: Message sent successfully
+02-05-2025_06-32-30: Receiving message
+02-05-2025_06-32-31: Message with id 10 received successfully
+02-05-2025_06-32-33: Sending a command get_all_tables
+02-05-2025_06-32-33: Sending message with id 11
+02-05-2025_06-32-33: Message sent successfully
+02-05-2025_06-32-33: Receiving message
+02-05-2025_06-32-34: Message with id 12 received successfully
+02-05-2025_06-32-45: Sending a command get_table_data
+02-05-2025_06-32-45: Sending message with id 13
+02-05-2025_06-32-45: Message sent successfully
+02-05-2025_06-32-45: Receiving message
+02-05-2025_06-32-46: Message with id 14 received successfully
+02-05-2025_06-32-53: Sending a command get_all_tables
+02-05-2025_06-32-53: Sending message with id 11
+02-05-2025_06-32-53: Message sent successfully
+02-05-2025_06-32-53: Receiving message
+02-05-2025_06-32-54: Message with id 15 received successfully
+02-05-2025_06-32-56: Sending a command get_table_data
+02-05-2025_06-32-56: Sending message with id 16
+02-05-2025_06-32-56: Message sent successfully
+02-05-2025_06-32-56: Receiving message
+02-05-2025_06-32-59: Error while getting the message
+02-05-2025_06-32-59: Error while getting the message. Checking the socket and trying to reconnect to the server.
+02-05-2025_06-32-59: Connecting to the sever
+02-05-2025_06-32-59: Connection failed
+02-05-2025_06-32-59: Couldn't connect to the server.
+02-05-2025_06-33-04: Sending a command check_json_integrity
+02-05-2025_06-33-04: Sending message with id 11

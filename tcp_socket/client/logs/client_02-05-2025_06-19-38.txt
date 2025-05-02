@@ -1,0 +1,20 @@
+02-05-2025_06-19-38: Started client initialization
+02-05-2025_06-19-38: Initialization complete
+02-05-2025_06-19-38: Connecting to the sever
+02-05-2025_06-19-38: Connection complete. Address: 192.168.56.101:7111
+02-05-2025_06-19-40: Sending a command get_all_tables
+02-05-2025_06-19-40: Connecting to the sever
+02-05-2025_06-19-40: Connection failed
+02-05-2025_06-19-40: Couldn't connect to the server. Trying to reconnect.
+02-05-2025_06-19-45: Connecting to the sever
+02-05-2025_06-19-45: Connection failed
+02-05-2025_06-19-45: Couldn't connect to the server. Trying to reconnect.
+02-05-2025_06-19-50: Connecting to the sever
+02-05-2025_06-19-50: Connection failed
+02-05-2025_06-19-50: Couldn't connect to the server. Trying to reconnect.
+02-05-2025_06-19-55: Connecting to the sever
+02-05-2025_06-19-55: Connection failed
+02-05-2025_06-19-55: Couldn't connect to the server. Trying to reconnect.
+02-05-2025_06-20-00: Connecting to the sever
+02-05-2025_06-20-00: Connection failed
+02-05-2025_06-20-00: Couldn't connect to the server. Trying to reconnect.

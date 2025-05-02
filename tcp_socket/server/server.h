@@ -191,7 +191,7 @@ public:
             return false;
         }
         else {
-            log("Message sent successfuly." + logsEndline);
+            log("Message sent successfully." + logsEndline);
             return true;
         }
     }

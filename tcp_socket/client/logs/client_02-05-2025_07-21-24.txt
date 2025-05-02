@@ -1,0 +1,63 @@
+02-05-2025_07-21-24: Started client initialization
+02-05-2025_07-21-24: Initialization complete
+02-05-2025_07-21-24: Connecting to the sever
+02-05-2025_07-21-24: Connection complete. Address: 192.168.56.101:7111
+02-05-2025_07-21-25: Sending a command get_all_tables
+02-05-2025_07-21-25: Sending message with id 1
+02-05-2025_07-21-25: Message sent successfully
+02-05-2025_07-21-25: Receiving message
+02-05-2025_07-21-26: Message with id 18 received successfully
+02-05-2025_07-21-34: Sending a command get_all_tables
+02-05-2025_07-21-34: Sending message with id 19
+02-05-2025_07-21-34: Message sent successfully
+02-05-2025_07-21-34: Receiving message
+02-05-2025_07-21-34: Error while getting the message
+02-05-2025_07-21-34: Error while getting the message. Checking the socket and trying to reconnect to the server.
+02-05-2025_07-21-34: Connecting to the sever
+02-05-2025_07-21-34: Connection failed
+02-05-2025_07-21-34: Couldn't connect to the server.
+02-05-2025_07-21-36: Sending a command get_all_tables
+02-05-2025_07-21-36: Sending message with id 20
+02-05-2025_07-21-36: Sending message failed
+02-05-2025_07-21-56: Sending a command get_all_tables
+02-05-2025_07-21-56: Sending message with id 21
+02-05-2025_07-21-56: Sending message failed
+02-05-2025_07-21-59: Sending a command get_all_tables
+02-05-2025_07-21-59: Sending message with id 22
+02-05-2025_07-21-59: Sending message failed
+02-05-2025_07-22-01: Sending a command get_all_tables
+02-05-2025_07-22-01: Sending message with id 23
+02-05-2025_07-22-01: Sending message failed
+02-05-2025_07-22-04: Sending a command get_all_tables
+02-05-2025_07-22-04: Sending message with id 24
+02-05-2025_07-22-04: Sending message failed
+02-05-2025_07-22-17: Sending a command get_all_tables
+02-05-2025_07-22-17: Sending message with id 25
+02-05-2025_07-22-17: Sending message failed
+02-05-2025_07-22-18: Sending a command get_all_tables
+02-05-2025_07-22-18: Sending message with id 26
+02-05-2025_07-22-18: Sending message failed
+02-05-2025_07-22-18: Sending a command get_all_tables
+02-05-2025_07-22-18: Sending message with id 27
+02-05-2025_07-22-18: Sending message failed
+02-05-2025_07-22-19: Sending a command get_all_tables
+02-05-2025_07-22-19: Sending message with id 28
+02-05-2025_07-22-19: Sending message failed
+02-05-2025_07-22-19: Sending a command get_all_tables
+02-05-2025_07-22-19: Sending message with id 29
+02-05-2025_07-22-19: Sending message failed
+02-05-2025_07-22-19: Sending a command get_all_tables
+02-05-2025_07-22-19: Sending message with id 30
+02-05-2025_07-22-19: Sending message failed
+02-05-2025_07-22-20: Sending a command get_all_tables
+02-05-2025_07-22-20: Sending message with id 31
+02-05-2025_07-22-20: Sending message failed
+02-05-2025_07-22-20: Sending a command get_all_tables
+02-05-2025_07-22-20: Sending message with id 32
+02-05-2025_07-22-20: Sending message failed
+02-05-2025_07-22-20: Sending a command get_all_tables
+02-05-2025_07-22-20: Sending message with id 33
+02-05-2025_07-22-20: Sending message failed
+02-05-2025_07-22-21: Sending a command get_all_tables
+02-05-2025_07-22-21: Sending message with id 34
+02-05-2025_07-22-21: Sending message failed

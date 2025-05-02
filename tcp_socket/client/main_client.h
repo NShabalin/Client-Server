@@ -5,7 +5,7 @@
 
 bool check_json(const nlohmann::json file) {
     if (file.empty() || file.is_null()) {
-        std::cout << "Ошибка при получении данных с сервера. Попробуйте еще раз.";
+        std::cout << "Ошибка при получении данных с сервера. Попробуйте еще раз.\n";
         return false;
     }
     return true;
@@ -132,8 +132,10 @@ void run_client() {
             case 1: 
                 std::cout << "Список всех таблиц:\n";
                 outputJson = client.send_command("get_all_tables").getData();
-                if (!check_json(outputJson)) break;
-                std::cout << std::setw(4) << outputJson << "\n";
+                if (check_json(outputJson)) {
+                    std::cout << std::setw(4) << outputJson << "\n";
+                }
+
                 break;
             case 2:
                 get_table_data(client);

@@ -1,0 +1,24 @@
+29-04-2025_06-32-29: Initializing server
+29-04-2025_06-32-29: Server initialization successful
+29-04-2025_06-32-29: Waiting for client connection
+29-04-2025_06-32-44: Connection to a client successful
+29-04-2025_06-32-44: Waiting for client connection
+29-04-2025_06-32-44: Waiting for a command. (Client address: 127.0.0.1:46986)
+29-04-2025_06-32-44: Receiving message. (Client address: 127.0.0.1:46986)
+29-04-2025_06-35-01: Message with id 1 received successfully. (Client address: 127.0.0.1:46986)
+29-04-2025_06-35-01: Executing the command: {"command":"get_all_tables"}. (Client address: 127.0.0.1:46986)
+29-04-2025_06-35-01: Command executed. (Client address: 127.0.0.1:46986)
+29-04-2025_06-35-01: Sending message with id 2. (Client address: 127.0.0.1:46986)
+29-04-2025_06-35-01: Message sent successfuly. (Client address: 127.0.0.1:46986)
+29-04-2025_06-35-01: Waiting for a command. (Client address: 127.0.0.1:46986)
+29-04-2025_06-35-01: Receiving message. (Client address: 127.0.0.1:46986)
+29-04-2025_06-47-41: Message with id 3 received successfully. (Client address: 127.0.0.1:46986)
+29-04-2025_06-47-41: Executing the command: {"command":"get_all_tables"}. (Client address: 127.0.0.1:46986)
+29-04-2025_06-47-41: Command executed. (Client address: 127.0.0.1:46986)
+29-04-2025_06-47-41: Sending message with id 4. (Client address: 127.0.0.1:46986)
+29-04-2025_06-47-41: Message sent successfuly. (Client address: 127.0.0.1:46986)
+29-04-2025_06-47-41: Waiting for a command. (Client address: 127.0.0.1:46986)
+29-04-2025_06-47-41: Receiving message. (Client address: 127.0.0.1:46986)
+29-04-2025_06-47-43: Error while getting the message. (Client address: 127.0.0.1:46986)
+29-04-2025_06-47-43: Error occured while getting the message from the client. Closing the connection with the client. (Client address: 127.0.0.1:46986)
+29-04-2025_06-47-47: Closing the server.

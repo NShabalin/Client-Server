@@ -1,0 +1,47 @@
+02-05-2025_07-31-01: Started client initialization
+02-05-2025_07-31-01: Initialization complete
+02-05-2025_07-31-01: Connecting to the sever
+02-05-2025_07-31-01: Connection complete. Address: 192.168.56.101:7111
+02-05-2025_07-31-08: Sending a command get_all_tables
+02-05-2025_07-31-08: Sending message with id 1
+02-05-2025_07-31-08: Message sent successfully
+02-05-2025_07-31-08: Receiving message
+02-05-2025_07-31-09: Error while getting the message
+02-05-2025_07-31-09: Error while getting the message. Checking the socket and trying to reconnect to the server.
+02-05-2025_07-31-09: Connecting to the sever
+02-05-2025_07-31-09: Connection failed
+02-05-2025_07-31-09: Couldn't connect to the server.
+02-05-2025_07-31-12: Sending a command get_all_tables
+02-05-2025_07-31-12: Connecting to the sever
+02-05-2025_07-31-12: Connection complete. Address: 192.168.56.101:7111
+02-05-2025_07-31-12: Sending message with id 2
+02-05-2025_07-31-12: Message sent successfully
+02-05-2025_07-31-12: Receiving message
+02-05-2025_07-31-13: Message with id 20 received successfully
+02-05-2025_07-31-15: Sending a command get_all_tables
+02-05-2025_07-31-15: Sending message with id 21
+02-05-2025_07-31-15: Message sent successfully
+02-05-2025_07-31-15: Receiving message
+02-05-2025_07-31-16: Error while getting the message
+02-05-2025_07-31-16: Error while getting the message. Checking the socket and trying to reconnect to the server.
+02-05-2025_07-31-16: Connecting to the sever
+02-05-2025_07-31-16: Connection failed
+02-05-2025_07-31-16: Couldn't connect to the server.
+02-05-2025_07-31-25: Sending a command get_all_tables
+02-05-2025_07-31-25: Connecting to the sever
+02-05-2025_07-31-25: Connection complete. Address: 192.168.56.101:7111
+02-05-2025_07-31-25: Sending message with id 22
+02-05-2025_07-31-25: Message sent successfully
+02-05-2025_07-31-25: Receiving message
+02-05-2025_07-31-25: Error while getting the message
+02-05-2025_07-31-25: Error while getting the message. Checking the socket and trying to reconnect to the server.
+02-05-2025_07-31-25: Connecting to the sever
+02-05-2025_07-31-25: Connection failed
+02-05-2025_07-31-25: Couldn't connect to the server.
+02-05-2025_07-31-27: Sending a command get_all_tables
+02-05-2025_07-31-27: Connecting to the sever
+02-05-2025_07-31-27: Connection complete. Address: 192.168.56.101:7111
+02-05-2025_07-31-27: Sending message with id 23
+02-05-2025_07-31-27: Message sent successfully
+02-05-2025_07-31-27: Receiving message
+02-05-2025_07-31-28: Message with id 24 received successfully

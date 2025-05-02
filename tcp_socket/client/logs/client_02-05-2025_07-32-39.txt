@@ -1,0 +1,30 @@
+02-05-2025_07-32-39: Started client initialization
+02-05-2025_07-32-39: Initialization complete
+02-05-2025_07-32-39: Connecting to the sever
+02-05-2025_07-32-39: Connection complete. Address: 192.168.56.101:7111
+02-05-2025_07-32-40: Sending a command get_all_tables
+02-05-2025_07-32-40: Sending message with id 1
+02-05-2025_07-32-40: Message sent successfully
+02-05-2025_07-32-40: Receiving message
+02-05-2025_07-32-41: Message with id 25 received successfully
+02-05-2025_07-32-42: Sending a command get_all_tables
+02-05-2025_07-32-42: Sending message with id 26
+02-05-2025_07-32-42: Message sent successfully
+02-05-2025_07-32-42: Receiving message
+02-05-2025_07-32-43: Message with id 27 received successfully
+02-05-2025_07-32-52: Sending a command get_all_tables
+02-05-2025_07-32-52: Sending message with id 28
+02-05-2025_07-32-52: Message sent successfully
+02-05-2025_07-32-52: Receiving message
+02-05-2025_07-32-53: Error while getting the message
+02-05-2025_07-32-53: Error while getting the message. Checking the socket and trying to reconnect to the server.
+02-05-2025_07-32-53: Connecting to the sever
+02-05-2025_07-32-53: Connection failed
+02-05-2025_07-32-53: Couldn't connect to the server.
+02-05-2025_07-32-54: Sending a command get_all_tables
+02-05-2025_07-32-54: Connecting to the sever
+02-05-2025_07-33-14: Connection complete. Address: 192.168.56.101:7111
+02-05-2025_07-33-14: Sending message with id 29
+02-05-2025_07-33-14: Message sent successfully
+02-05-2025_07-33-14: Receiving message
+02-05-2025_07-33-15: Message with id 30 received successfully
