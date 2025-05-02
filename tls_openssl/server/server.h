@@ -5,7 +5,6 @@
 #include <ws2tcpip.h>
 #pragma comment(lib, "ws2_32.lib")
 #else
-// includes for linux
 #include <netinet/in.h>
 #include <unistd.h>
 #include <arpa/inet.h>
@@ -33,7 +32,6 @@ private:
     uint64_t messageId;
 public:
     Server() {
-        
     }
 
     void start() {
@@ -117,11 +115,12 @@ public:
 
         // запуск сокета
         if (!socket_init()) {
+            log("Error while initializing the socket. Exiting the program.");
             server_close();
         }
 
         log("Server initialization successful");
-        std::cout << "Server initialization successful\n";
+        std::cout << "Сервер успешно запущен\n";
     }
 
     bool socket_init() {
@@ -317,10 +316,17 @@ public:
     bool check_server_socket() {
         int error = 0;
         socklen_t length = sizeof(error);
+        #ifdef _WIN32
+        if (getsockopt(serverSocket, SOL_SOCKET, SO_ERROR, reinterpret_cast<char*>(&error), &length) < 0) {
+            log("Error discovered while getting the socket options:" + std::string(strerror(error)));
+            return false;
+        }
+        #else
         if (getsockopt(serverSocket, SOL_SOCKET, SO_ERROR, &error, &length) < 0) {
             log("Error discovered while getting the socket options:" + std::string(strerror(error)));
             return false;
         }
+        #endif
         if (error != 0) {
             log("Error discovered while checking the socket:" + std::string(strerror(error)));
         }

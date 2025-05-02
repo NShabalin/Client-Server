@@ -143,7 +143,7 @@ public:
                         // проверка целостности, занесение результатов
                         nlohmann::json fileCheckResult;
                         fileCheckResult["file"] = entry.path();
-                        if (check_json_integrity(entry.path())) {
+                        if (check_json_integrity(entry.path().string())) {
                             fileCheckResult["status"] = "valid";
                         }
                         else {

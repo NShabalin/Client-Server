@@ -42,6 +42,14 @@ public:
 
     void init() {
         log("Started client initialization");
+        // wsa запуск для виндовс
+        #ifdef _WIN32
+        WSADATA wsaData;
+        if (WSAStartup(MAKEWORD(2,2), &wsaData) != 0) {
+            log("WSA startup failed");
+            return;
+        }
+        #endif
 
         // подключение к серверу
         while (!tls_connect()) {
@@ -271,16 +279,42 @@ public:
     }
 
     bool check_client_socket() {
-        int error = 0;
-        socklen_t length = sizeof(error);
-        if (getsockopt(clientSocket, SOL_SOCKET, SO_ERROR, &error, &length) < 0) {
-            log("Error discovered while getting the socket options: " + std::string(strerror(error)));
+        #ifdef _WIN32
+        // в WinSock нет MSG_DONTWAIT, делаем временно неблокирующим сокет
+        u_long nonblock = 1;
+        ioctlsocket(clientSocket, FIONBIO, &nonblock);
+
+        char tmp;
+        // просматриваем один байт
+        int n = recv(clientSocket, &tmp, 1, MSG_PEEK);
+
+        // возвращаем блокирующий режим
+        nonblock = 0;
+        ioctlsocket(clientSocket, FIONBIO, &nonblock);
+
+        if (n > 0) 
+            return true;
+        if (n == 0) 
             return false;
-        }
-        if (error != 0) {
-            log("Error discovered while checking the socket:" + std::string(strerror(error)));
-        }
-        return true;
+
+        int err = WSAGetLastError();
+        // нет данных, но сокет впорядке
+        if (err == WSAEWOULDBLOCK) 
+            return true;
+        return false;
+
+        #else 
+        
+        char tmp;
+        int n = recv(clientSocket, &tmp, 1, MSG_DONTWAIT | MSG_PEEK);
+        if (n > 0) 
+            return true;
+        if (n == 0) 
+            return false;
+        if (errno == EAGAIN || errno == EWOULDBLOCK)
+            return true;
+        return false;  
+        #endif
     }
 
     std::string get_current_time() {
@@ -301,6 +335,12 @@ public:
         if (logFile.is_open()) {
             logFile << get_current_time() << ": " << message << "\n";
         }
+    }
+    
+    void WSA_cleanup() {
+        #ifdef _WIN32
+        WSACleanup();
+        #endif
     }
 };
 

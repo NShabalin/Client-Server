@@ -148,6 +148,7 @@ void run_client() {
                 std::cout << std::setw(4) << outputJson << "\n";
                 break;
             case 0: 
+                client.WSA_cleanup();
                 exit(0);
         }
 
