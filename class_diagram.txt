@@ -1,0 +1,92 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam dpi 120
+
+class Message {
+  +id: uint64
+  +size: uint64
+  +data: nlohmann::json
+  --
+  +getId(): uint64
+  +getSize(): uint64
+  +getData(): json
+  +setId(id)
+  +setSize(size)
+  +setData(data)
+}
+
+class encryptorOpenSSL {
+  -key[32]: unsigned char
+  -iv[16]: unsigned char
+  --
+  +encrypt(text: std::string, out: std::vector<char>): bool
+  +decrypt(text: std::string&, enc: std::vector<char>&): bool
+  +log(msg: std::string)
+}
+
+class Client {
+  -clientSocket: int
+  -serverAddress: sockaddr_in
+  --
+  +init()
+  +socket_init(): bool
+  +connect_to_server(): bool
+  +send_message(msg: Message): bool
+  +receive_message(): Message
+  +send_command(cmd, args): Message
+  +check_client_socket(): bool
+  +log(msg: std::string)
+}
+
+class Server {
+  -serverSocket: int
+  -serverAddress: sockaddr_in
+  --
+  +start()
+  +client_thread(sock, addr)
+  +send_message(msg: Message, sock): bool
+  +receive_message(sock): Message
+  +wait_connection(sock, addr): bool
+  +check_server_socket(): bool
+  +server_close()
+  +log(msg: std::string)
+}
+
+class ServerCommands {
+  -rootPath: std::filesystem::path
+  --
+  +do_command(cmdJson): json
+  +get_all_tables(): json
+  +get_table_data(args): json
+  +change_table_entry(args): json
+  +check_all_json_integrity(): json
+  +log(msg: std::string)
+}
+
+class main_client {
+  +check_json()
+  +get_table_data()
+  +change_table_entry()
+  +run_client()
+}
+
+class main_server {
+  +run_server()
+}
+
+class main {
+  
+}
+
+Client  --> Message
+Server  --> Message
+Client  --> encryptorOpenSSL
+Server  --> encryptorOpenSSL
+Server  --> ServerCommands
+main_client --> Client
+main_server -> Server
+main --> main_server
+main --> main_client
+
+@enduml
+
