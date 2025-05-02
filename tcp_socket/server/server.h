@@ -117,7 +117,7 @@ public:
         }
 
         log("Server initialization successful");
-        std::cout << "Server initialization successful\n";
+        std::cout << "Сервер успешно запущен\n";
     }
 
     bool socket_init() {
@@ -258,10 +258,17 @@ public:
     bool check_server_socket() {
         int error = 0;
         socklen_t length = sizeof(error);
+        #ifdef _WIN32
+        if (getsockopt(serverSocket, SOL_SOCKET, SO_ERROR, reinterpret_cast<char*>(&error), &length) < 0) {
+            log("Error discovered while getting the socket options:" + std::string(strerror(error)));
+            return false;
+        }
+        #else
         if (getsockopt(serverSocket, SOL_SOCKET, SO_ERROR, &error, &length) < 0) {
             log("Error discovered while getting the socket options:" + std::string(strerror(error)));
             return false;
         }
+        #endif
         if (error != 0) {
             log("Error discovered while checking the socket:" + std::string(strerror(error)));
         }

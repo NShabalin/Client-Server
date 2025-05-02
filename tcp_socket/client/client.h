@@ -245,6 +245,7 @@ public:
     }
 
     bool check_client_socket() {
+<<<<<<< HEAD
         #ifdef _WIN32
         // в WinSock нет MSG_DONTWAIT, делаем временно неблокирующим сокет
         u_long nonblock = 1;
@@ -281,6 +282,25 @@ public:
             return true;
         return false;  
         #endif
+=======
+        int error = 0;
+        socklen_t length = sizeof(error);
+        #ifdef _WIN32
+        if (getsockopt(clientSocket, SOL_SOCKET, SO_ERROR, reinterpret_cast<char*>(&error), &length) < 0) {
+            log("Error discovered while getting the socket options:" + std::string(strerror(error)));
+            return false;
+        }
+        #else
+        if (getsockopt(clientSocket, SOL_SOCKET, SO_ERROR, &error, &length) < 0) {
+            log("Error discovered while getting the socket options:" + std::string(strerror(error)));
+            return false;
+        }
+        #endif
+        if (error != 0) {
+            log("Error discovered while checking the socket:" + std::string(strerror(error)));
+        }
+        return true;
+>>>>>>> 00f3038686d47f20677eadeaf87b7afb6c1f00f8
     }
 
     std::string get_current_time() {

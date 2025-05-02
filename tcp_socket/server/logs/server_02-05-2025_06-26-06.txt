@@ -1,0 +1,29 @@
+02-05-2025_06-26-06: Initializing server
+02-05-2025_06-26-06: Server initialization successful
+02-05-2025_06-26-06: Waiting for client connection
+02-05-2025_06-26-42: Connection to a client successful
+02-05-2025_06-26-42: Waiting for client connection
+02-05-2025_06-26-42: Waiting for a command. (Client address: 192.168.56.1:46306)
+02-05-2025_06-26-42: Receiving message. (Client address: 192.168.56.1:46306)
+02-05-2025_06-26-43: Message with id 1 received successfully. (Client address: 192.168.56.1:46306)
+02-05-2025_06-26-43: Executing the command: {"command":"get_all_tables"}. (Client address: 192.168.56.1:46306)
+02-05-2025_06-26-43: Command executed. (Client address: 192.168.56.1:46306)
+02-05-2025_06-26-43: Sending message with id 2. (Client address: 192.168.56.1:46306)
+02-05-2025_06-26-43: Message sent successfuly. (Client address: 192.168.56.1:46306)
+02-05-2025_06-26-43: Waiting for a command. (Client address: 192.168.56.1:46306)
+02-05-2025_06-26-43: Receiving message. (Client address: 192.168.56.1:46306)
+02-05-2025_06-27-16: Error while getting the message. (Client address: 192.168.56.1:46306)
+02-05-2025_06-27-16: Error occured while getting the message from the client. Closing the connection with the client. (Client address: 192.168.56.1:46306)
+02-05-2025_06-29-17: Connection to a client successful
+02-05-2025_06-29-17: Waiting for client connection
+02-05-2025_06-29-17: Waiting for a command. (Client address: 192.168.56.1:53788)
+02-05-2025_06-29-17: Receiving message. (Client address: 192.168.56.1:53788)
+02-05-2025_06-29-22: Message with id 1 received successfully. (Client address: 192.168.56.1:53788)
+02-05-2025_06-29-22: Executing the command: {"command":"get_all_tables"}. (Client address: 192.168.56.1:53788)
+02-05-2025_06-29-22: Command executed. (Client address: 192.168.56.1:53788)
+02-05-2025_06-29-22: Sending message with id 3. (Client address: 192.168.56.1:53788)
+02-05-2025_06-29-22: Message sent successfuly. (Client address: 192.168.56.1:53788)
+02-05-2025_06-29-22: Waiting for a command. (Client address: 192.168.56.1:53788)
+02-05-2025_06-29-22: Receiving message. (Client address: 192.168.56.1:53788)
+02-05-2025_06-29-25: Closing the server.
+02-05-2025_06-29-25: Connection accept failed
