@@ -1,1 +1,1 @@
-Client-Server implementation for an educational intership in a university
+Client-Server implementation for an educational internship in a university
